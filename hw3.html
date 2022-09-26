@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+
+    <!-- Подключите стили -->
+
+    <style>
+      * {
+        margin: 0;
+
+        padding: 0;
+      }
+
+      body {
+        background-image: url("C:\Users\monti\OneDrive\Рабочий стол\ISKO ABI\photo_project_1.jpg");
+
+        background: #E5E5E5;
+      }
+
+      .full {
+        width: 100%;
+
+        height: 3000px;
+
+        padding-top: 50px;
+
+        padding-bottom: 50px;
+
+        background: #e5e5e5;
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: center;
+      }
+
+      .head_ul {
+        list-style: none;
+
+        display: flex;
+
+        margin-top: 37px;
+
+        margin-right: 80px;
+      }
+
+      .head_link {
+        text-decoration: none;
+
+        margin-left: 46px;
+
+        font-family: "Oswald";
+
+        font-style: normal;
+
+        font-weight: 300;
+
+        font-size: 24px;
+
+        line-height: 36px;
+
+        text-align: center;
+
+        text-transform: uppercase;
+
+        color: #000000;
+      }
+
+      .head_link:hover {
+        border: 1px solid #000000;
+
+        border-radius: 15px;
+      }
+
+      .head_logo {
+        width: 204px;
+
+        height: 53px;
+
+        font-family: "Oswald";
+
+        font-style: normal;
+
+        font-weight: 500;
+
+        font-size: 36px;
+
+        line-height: 53px;
+
+        text-align: center;
+
+        text-transform: uppercase;
+
+        color: #000000;
+
+        margin-top: 29px;
+
+        margin-left: 80px;
+      }
+
+      header {
+        width: 1440px;
+
+        height: 110px;
+
+        background-color: #ffffff;
+
+        display: flex;
+
+        justify-content: space-between;
+      }
+
+      .first_img {
+        background-image: url("photo_project_1.jpg");
+
+        width: 1440px;
+
+        height: 812px;
+
+        background-position: center; /* Center the image */
+
+        background-repeat: no-repeat; /* Do not repeat the image */
+
+        background-size: cover; /* Resize the background image to cover the entire container */
+      }
+
+      .surface_of_img {
+        width: 399px;
+
+        height: 89px;
+
+        font-family: "Oswald";
+
+        font-style: normal;
+
+        font-weight: 700;
+
+        font-size: 60px;
+
+        line-height: 89px;
+
+        text-align: center;
+
+        text-transform: uppercase;
+
+        color: #ffffff;
+
+        margin-top: 355px;
+
+        margin-left: 522px;
+      }
+
+      hr {
+        width: 80px;
+
+        height: 10px;
+
+        background: #817070;
+
+        margin-top: 7px;
+
+        margin-left: 687px;
+      }
+
+      .story_header {
+        width: 91px;
+
+        height: 53px;
+
+        font-family: "Oswald";
+
+        font-style: normal;
+
+        font-weight: bold;
+
+        font-size: 36px;
+
+        line-height: 53px;
+
+        text-transform: uppercase;
+
+        color: #000000;
+
+        margin-top: 38px;
+
+        margin-left: 674px;
+      }
+
+      .story {
+        width: 1440px;
+
+        height: 610px;
+
+        background-color: #ffffff;
+      }
+
+      .story_photo_and_text {
+        display: flex;
+      }
+
+      .story_photo {
+        width: 600px;
+
+        height: 400px;
+
+        margin-left: 80px;
+
+        margin-top: 60px;
+      }
+
+      .story_text {
+        width: 597px;
+
+        height: 180px;
+
+        font-family: "Oswald";
+
+        font-style: normal;
+
+        font-weight: 300;
+
+        font-size: 20px;
+
+        line-height: 30px;
+
+        color: #000000;
+
+        margin-left: 40px;
+
+        margin-top: 170px;
+      }
+
+      .blog_head {
+        font-family: "Oswald";
+
+        font-style: normal;
+
+        font-weight: bold;
+
+        font-size: 36px;
+
+        line-height: 53px;
+
+        text-align: center;
+
+        color: #000000;
+
+        width: 76px;
+
+        height: 53px;
+
+        text-transform: uppercase;
+
+        margin: 60px 682px;
+      }
+
+      .blog {
+        width: 1440px;
+
+        height: 711px;
+
+        background: #efefef;
+      }
+
+      .elem_text {
+        width: 325px;
+
+        height: 108px;
+
+        font-family: "Oswald";
+
+        font-style: normal;
+
+        font-weight: 300;
+
+        font-size: 18px;
+
+        line-height: 27px;
+
+        color: #000000;
+      }
+
+      .img {
+        width: 325px;
+
+        height: 216px;
+
+        text-align: center;
+
+        margin: 20px 24px;
+      }
+
+      .header_1 {
+        width: 156px;
+
+        height: 36px;
+
+        font-family: "Oswald";
+
+        font-style: normal;
+
+        font-weight: bold;
+
+        font-size: 24px;
+
+        line-height: 36px;
+
+        /* identical to box height */
+
+        text-align: center;
+
+        color: #000000;
+
+        margin-top: 20px;
+
+        margin-left: 20px;
+      }
+
+      .header_2 {
+        width: 177px;
+
+        height: 36px;
+
+        font-family: "Oswald";
+
+        font-style: normal;
+
+        font-weight: bold;
+
+        font-size: 24px;
+
+        line-height: 36px;
+
+        text-align: center;
+
+        color: #000000;
+
+        margin-top: 20px;
+
+        margin-left: 20px;
+      }
+
+      .header_3 {
+        width: 205px;
+
+        height: 36px;
+
+        font-family: "Oswald";
+
+        font-style: normal;
+
+        font-weight: bold;
+
+        font-size: 24px;
+
+        line-height: 36px;
+
+        text-align: center;
+
+        color: #000000;
+
+        margin-top: 20px;
+
+        margin-left: 20px;
+      }
+
+      .elements_of_blog {
+        display: flex;
+
+        justify-content: space-around;
+      }
+
+      .element {
+        width: 365px;
+
+        height: 474px;
+
+        background-color: #ffffff;
+      }
+
+      .elem_text {
+        width: 325px;
+
+        height: 108px;
+
+        font-family: "Oswald";
+
+        font-style: normal;
+
+        font-weight: 300;
+
+        font-size: 18px;
+
+        line-height: 27px;
+
+        color: #000000;
+
+        margin-left: 20px;
+      }
+
+      .sub {
+        width: 1440px;
+
+        height: 337px;
+
+        background: #817070;
+
+        display: flex;
+
+        flex-direction: column;
+      }
+
+      .sub_text {
+        width: 161px;
+
+        height: 53px;
+
+        font-family: "Oswald";
+
+        font-style: normal;
+
+        font-weight: 700;
+
+        font-size: 36px;
+
+        line-height: 53px;
+
+        text-align: center;
+
+        text-transform: uppercase;
+
+        color: #ffffff;
+
+        margin: 60px 639px 28px 640px;
+      }
+
+      .sub_ent {
+        width: 300px;
+
+        height: 55px;
+
+        background: #817070;
+
+        border: 3px solid #ffffff;
+
+        font-family: "Oswald";
+
+        font-style: normal;
+
+        font-weight: 300;
+
+        font-size: 20px;
+
+        line-height: 30px;
+
+        text-align: center;
+
+        color: #ffffff;
+
+        margin-left: 571px;
+      }
+
+      .sub_submit {
+        width: 129px;
+
+        height: 55px;
+
+        left: 655px;
+
+        top: 224px;
+
+        background: #ffffff;
+
+        border: 3px solid #ffffff;
+
+        font-family: "Oswald";
+
+        font-style: normal;
+
+        font-weight: 500;
+
+        font-size: 20px;
+
+        line-height: 30px;
+
+        text-align: center;
+
+        text-transform: uppercase;
+
+        color: #817070;
+
+        margin-top: 28px;
+
+        margin-left: 655px;
+      }
+
+      .end {
+        width: 1440px;
+
+        height: 73px;
+
+        color: #ffffff;
+      }
+
+      .end_text {
+        width: 147px;
+
+        height: 30px;
+
+        font-family: "Oswald";
+
+        font-style: normal;
+
+        font-weight: 300;
+
+        font-size: 20px;
+
+        line-height: 30px;
+
+        text-align: center;
+
+        text-transform: uppercase;
+
+        color: #000000;
+      }
+    </style>
+
+    <!-- <link rel="stylesheet" href="hw3_style.css" /> -->
+
+    <!-- Подключите шрифт -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:wght@200&family=Montserrat:wght@100&family=Oswald:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="full">
+      <header>
+        <p class="head_logo" id="go_home">coffee house</p>
+
+        <ul class="head_ul">
+          <li><a href="#go_home" class="head_link">home</a></li>
+
+          <li><a href="#go_story" class="head_link">story</a></li>
+
+          <li><a href="#go_blog" class="head_link">blog</a></li>
+
+          <li><a href="#go_sub" class="head_link">subscribe</a></li>
+        </ul>
+      </header>
+
+      <div class="first_img">
+        <p class="surface_of_img">TAKE YOUR TIME</p>
+
+        <hr />
+      </div>
+
+      <div class="story" id="go_story">
+        <div class="story_header">
+          <p>story</p>
+        </div>
+
+        <div class="story_photo_and_text">
+          <img src="sotry_photo.jpg" alt="sotry_photo" class="story_photo" />
+
+          <div class="story_text">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+              varius eget arcu quis cursus. Nunc id tortor imperdiet, vestibulum
+              orci sed, gravida orci. Cras a enim ac elit eleifend euismod.
+              Class aptent taciti sociosqu ad litora torquent per conubia
+              nostra, per inceptos himenaeos. Praesent mattis ultrices est,
+              congue ullamcorper erat bibendum pulvinar. In accumsan dapibus
+              accumsan. Maecenas semper est ut nunc feugiat, vel ultrices ligula
+              commodo. Donec eget pulvinar nunc, eget pharetra risus.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="blog" id="go_blog">
+        <div class="blog_head">
+          <p>blog</p>
+        </div>
+
+        <div class="elements_of_blog">
+          <div class="element">
+            <div class="header_1">Daily Coffee News</div>
+
+            <figure>
+              <img src="elem1.jfif" alt="elem1" class="img" />
+            </figure>
+
+            <div class="elem_text">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                varius eget arcu quis cursus. Nunc id tortor imperdiet,
+                vestibulum orci sed, gravida orci. Cras a enim ac elit eleifend
+                euismod.
+              </p>
+            </div>
+          </div>
+
+          <div class="element">
+            <div class="header_2">Dutch Coffee Chains</div>
+
+            <figure>
+              <img src="elem2.jfif" alt="elem2" class="img" />
+            </figure>
+
+            <div class="elem_text">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                varius eget arcu quis cursus. Nunc id tortor imperdiet,
+                vestibulum orci sed, gravida orci. Cras a enim ac elit eleifend
+                euismod.
+              </p>
+            </div>
+          </div>
+
+          <div class="element">
+            <div class="header_3">Start Up In Minneapolis</div>
+
+            <figure>
+              <img src="elem3.jfif" alt="elem3" class="img" />
+            </figure>
+
+            <div class="elem_text">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                varius eget arcu quis cursus. Nunc id tortor imperdiet,
+                vestibulum orci sed, gravida orci. Cras a enim ac elit eleifend
+                euismod.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="sub" id="go_sub">
+          <div class="sub_text">SUBSCRIBE</div>
+
+          <button class="sub_ent">enter your email</button>
+
+          <button class="sub_submit">submit</button>
+        </div>
+      </footer>
+
+      <div class="end">
+        <p class="end_text">© COPYRIGHT 2021</p>
+      </div>
+    </div>
+  </body>
+</html>
